@@ -1,0 +1,78 @@
+.app {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.model-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.model-box {
+  position: relative;
+  width: 400px; /* Tăng kích thước của model */
+  height: 600px; /* Điều chỉnh chiều cao của box nếu cần */
+}
+
+.model-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.glasses-overlay {
+  position: absolute;
+  top: 125px; /* Điều chỉnh vị trí kính sao cho đúng với mắt model */
+  left: 105px; /* Điều chỉnh vị trí kính */
+  width: 190px; /* Kích thước kính lớn hơn */
+  opacity: 0.9;
+}
+
+.glass-info {
+  position: absolute;
+  bottom: 60px; /* Đảm bảo phần chữ không che mặt */
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 166, 0, 0.8);
+  color: black;
+  text-align: left;
+  padding: 11px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.glasses-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.thumbnail {
+  width: 120px; /* Điều chỉnh kích thước thumbnail */
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: white;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
