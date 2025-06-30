@@ -19,7 +19,7 @@ export default function Glasses() {
 
   return (
     <div className="app">
-      <h1>TRY GLASSES APP ONLINE</h1>
+      <h1 className="text-red-600">TRY GLASSES APP ONLINE</h1>
 
       {/* Model Section */}
       <div className="model-section">
