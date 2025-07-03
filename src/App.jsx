@@ -8,6 +8,7 @@ import EventClick from './event-click'
 import Glasses from './glasses'
 import ListKeys from './list-keys'
 import RenderingElements from './rendering-elements'
+import ShoesStore from './ShoesStore'
 import ShoppingPhone from './shopping-phone'
 import State from './state'
 
@@ -39,7 +40,12 @@ function App() {
       <Communication/>
       <br />
       <br />
-      <ShoppingPhone/>
+      {/* <ShoppingPhone/> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <ShoesStore/>
       
     </>
   )

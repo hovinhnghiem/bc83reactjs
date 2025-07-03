@@ -8,6 +8,7 @@ export default function ShoppingPhone() {
   const [listProduct, setListProduct] = useState(data);
   const [productDetail, setProductDetail] = useState(listProduct[0]);
   const [carts, setCarts] = useState([])
+
   const handleAddCart = (phone) => {
     const newCarts = [...carts]
 
@@ -23,9 +24,6 @@ export default function ShoppingPhone() {
       //thay đổi số lượng sản phẩm trong giỏ hàng
       newCarts[index].soLuong +=1
     }
-
-
-
     //setcart với giá trị new carts
     setCarts(newCarts)
   }

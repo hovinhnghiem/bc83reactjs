@@ -47,19 +47,19 @@ export default function Modal(props) {
               {
                 carts.map((item) => {
                   return (
-                    <tr key={item.maSP} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200" >
+                    <tr key={item.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200" >
                       <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                        {item.tenSP}
+                        {item.name}
                       </th>
                       <td className="px-6 py-4">
-                        <img className="size-25" src={item.hinhAnh} alt="..." />
+                        <img className="size-25" src={item.image} alt="..." />
                       </td>
                       <td className="px-6 py-4">
-                        {item.giaBan}
+                        {item.price}
                       </td>
                       <td className="px-6 py-4">
                         <button disabled={item.soLuong===1} onClick={() => (
-                          handleCartQuantity(item.maSP, -1)
+                          handleCartQuantity(item.id, -1)
                         )} className="px-2 py-2 rounded-md border border-black text-black" >
 
                           -
@@ -67,7 +67,7 @@ export default function Modal(props) {
                         </button>
                         <span className="px-2">{item.soLuong}</span>
                         <button onClick={() => (
-                          handleCartQuantity(item.maSP, 1)
+                          handleCartQuantity(item.id, 1)
                         )} className="px-2 py-2 rounded-md border border-black text-black" >
 
                           +
@@ -75,10 +75,10 @@ export default function Modal(props) {
                         </button>
                       </td>
                       <td className="px-6 py-4">
-                        {item.giaBan * item.soLuong}
+                        {item.price * item.soLuong}
                       </td>
                        <td onClick={() => (
-                        handleDeleteCart(item.maSP)
+                        handleDeleteCart(item.id)
                        )} className="px-6 py-4 text-red-600 cursor-pointer">
                         X
                       </td>
